@@ -1,0 +1,234 @@
+/* ---------------------------------------------------------------------------------------------
+   apps.vibkings.com — glass panels over a night gradient.
+
+   These pages are read by players looking for a support address and by store reviewers checking a
+   privacy policy, so the look never costs legibility: body text stays high contrast, the type stays
+   big enough to read on a phone, and every effect degrades to something plain rather than to
+   something unreadable. Printing drops to black on white, because terms get printed.
+   --------------------------------------------------------------------------------------------- */
+
+:root {
+    --ink: #eef1f8;            /* body text */
+    --ink-strong: #ffffff;     /* headings */
+    --muted: #9aa5bb;          /* dates, captions */
+    --accent: #f2b544;         /* the game's amber */
+    --accent-soft: #ffd489;
+
+    --glass: rgba(255, 255, 255, .06);
+    --glass-strong: rgba(255, 255, 255, .10);
+    --edge: rgba(255, 255, 255, .14);
+    --shadow: 0 24px 60px rgba(0, 0, 0, .45);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    margin: 0;
+    padding: 0 16px 72px;      /* 16px side gutter: nothing touches a phone's edge */
+    min-height: 100vh;
+    color: var(--ink);
+    background: #0a0d14;
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* The night: a fixed gradient plus three soft lights, so scrolling does not drag a repaint. */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        radial-gradient(60rem 40rem at 15% -10%, rgba(242, 181, 68, .16), transparent 60%),
+        radial-gradient(50rem 40rem at 95% 8%, rgba(120, 88, 220, .20), transparent 60%),
+        radial-gradient(55rem 45rem at 50% 108%, rgba(40, 150, 190, .16), transparent 62%),
+        linear-gradient(170deg, #0c1018 0%, #0a0d14 45%, #07090f 100%);
+}
+
+/* A faint grid, like a windscreen at night. Very low contrast on purpose. */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .5;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .022) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(70% 60% at 50% 0%, #000 30%, transparent 100%);
+    -webkit-mask-image: radial-gradient(70% 60% at 50% 0%, #000 30%, transparent 100%);
+}
+
+main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.75rem 2.5rem;
+    border: 1px solid var(--edge);
+    border-radius: 20px;
+    background: var(--glass);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    margin-top: 2.5rem;
+}
+
+/* No backdrop-filter (older browsers): use a solid panel rather than unreadable transparency. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    main { background: rgba(16, 20, 30, .92); }
+}
+
+header {
+    border-bottom: 1px solid var(--edge);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 5.5vw, 2.3rem);
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    margin: .75rem 0 .5rem;
+    color: var(--ink-strong);
+}
+
+h2 {
+    font-size: 1.2rem;
+    letter-spacing: .01em;
+    margin: 2.5rem 0 .75rem;
+    color: var(--ink-strong);
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    margin-right: .6rem;
+    border-radius: 50%;
+    background: var(--accent);
+    vertical-align: middle;
+}
+
+h3 {
+    font-size: 1.02rem;
+    margin: 1.75rem 0 .5rem;
+    color: var(--accent-soft);
+}
+
+p, li { color: var(--ink); }
+strong { color: var(--ink-strong); }
+
+.updated {
+    color: var(--muted);
+    font-size: .95rem;
+    margin: 0;
+}
+
+.lead {
+    border-left: 3px solid var(--accent);
+    background: var(--glass-strong);
+    border-radius: 0 12px 12px 0;
+    padding: .9rem 1.1rem;
+    margin: 1.5rem 0;
+}
+
+nav { font-size: .92rem; }
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+nav a:hover { color: var(--accent); text-decoration: underline; }
+
+a {
+    color: var(--accent);
+    overflow-wrap: break-word;   /* long URLs must not push the page sideways on a phone */
+}
+
+ul { padding-left: 1.3rem; }
+li { margin: .35rem 0; }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.25rem 0;
+    font-size: .95rem;
+    background: var(--glass-strong);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    border-bottom: 1px solid var(--edge);
+    padding: .65rem .8rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+th { background: rgba(255, 255, 255, .05); color: var(--ink-strong); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+
+hr { border: 0; border-top: 1px solid var(--edge); margin: 2.5rem 0; }
+
+footer {
+    border-top: 1px solid var(--edge);
+    color: var(--muted);
+    font-size: .9rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+}
+
+footer a { color: var(--muted); }
+footer a:hover { color: var(--accent); }
+
+/* App cards on the index. One per app; the list grows as apps do. */
+.card {
+    border: 1px solid var(--edge);
+    border-radius: 14px;
+    background: var(--glass-strong);
+    margin: 1.25rem 0;
+    padding: 1.35rem 1.5rem;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.card:hover { border-color: rgba(242, 181, 68, .45); transform: translateY(-2px); }
+.card h3 { margin-top: 0; font-size: 1.15rem; color: var(--ink-strong); }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.card p:last-child { margin-bottom: 0; font-size: .95rem; color: var(--muted); }
+.card p:last-child a { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+    .card { transition: none; }
+    .card:hover { transform: none; }
+}
+
+@media (max-width: 34rem) {
+    body { padding: 0 12px 56px; }
+    main { padding: 1.5rem 1.15rem 2rem; border-radius: 16px; margin-top: 1.25rem; }
+}
+
+/* Terms and privacy policies get printed. Give them clean black on white. */
+@media print {
+    body { background: #fff; color: #000; padding: 0; }
+    body::before, body::after { display: none; }
+    main {
+        max-width: none;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        padding: 0;
+    }
+    h1, h2, h3, strong, p, li, td, th { color: #000; }
+    a { color: #000; }
+    nav, footer { display: none; }
+}
