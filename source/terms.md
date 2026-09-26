@@ -1,6 +1,6 @@
 # Terms of Service — After Dark: Street War
 
-**Last updated: 25 September 2026**
+**Last updated: 26 September 2026**
 
 These terms are the agreement between you and **Vibkings Global Limited** ("we", "us") about your use
 of After Dark: Street War ("the game"). By installing or playing the game you accept them. If you do
@@ -116,4 +116,4 @@ have jurisdiction. This does not take away rights you have as a consumer in the 
 ## 11. Contact
 
 **Vibkings Global Limited**
-Email: valentineahize@gmail.com
+Email: support@vibkings.com

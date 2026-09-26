@@ -1,6 +1,6 @@
 # Privacy Policy — After Dark: Street War
 
-**Last updated: 25 September 2026**
+**Last updated: 26 September 2026**
 
 After Dark: Street War ("the game") is made by Vibkings Global Limited ("we", "us"). This policy
 explains what the game collects, why, who else can see it, and how to get it deleted. It covers the
@@ -143,6 +143,6 @@ the change is significant, we will say so in the game before it takes effect.
 Questions, data requests and deletion requests:
 
 **Vibkings Global Limited**
-Email: valentineahize@gmail.com
+Email: support@vibkings.com
 
 We answer data and deletion requests within 30 days.
