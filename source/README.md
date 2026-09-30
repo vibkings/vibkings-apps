@@ -4,6 +4,7 @@ The privacy policies and terms in Markdown — easier to read and to diff than t
 copy is the HTML in the app folders; this is the working copy.
 
 - `privacy-policy.md`, `terms.md` — After Dark: Street War, published at `../afterdark/`.
+- `citylife-privacy-policy.md`, `citylife-terms.md` — City Life, published at `../citylife/`.
 
 The next app adds its own pair here, named for the app.
 

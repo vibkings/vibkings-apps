@@ -8,38 +8,86 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
 
-<header>
-<h1>Vibkings Apps</h1>
-<p class="updated">Apps and games from Vibkings Global Limited</p>
+<header class="topbar">
+<div class="topbar-inner">
+<a class="brand" href="index.html"><span class="brand-mark">V</span> Vibkings <small>Apps</small></a>
+<nav class="topbar-links">
+<a href="#games">Games</a>
+<a href="#support">Support</a>
+<a href="#data">Your data</a>
+</nav>
+</div>
 </header>
 
-<h2>Our apps</h2>
+<main class="wide">
 
-<div class="card">
+<section class="hero">
+<span class="eyebrow">Vibkings Global Limited</span>
+<h1>Games for the phone in your pocket.</h1>
+<p>Our apps and games, each with its own support, privacy policy and terms.</p>
+</section>
+
+<h2 class="section-title" id="games">Our games</h2>
+
+<div class="grid">
+
+<article class="game-card">
+<span class="badge">Coming soon</span>
+<img class="game-cover" src="citylife/cover.jpg" alt="City Life: a villa with a red supercar between two palm trees" width="1600" height="720">
+<div class="game-body">
+<img class="game-icon" src="citylife/icon.png" alt="" width="256" height="256">
+<h3><a href="citylife/index.html">City Life</a></h3>
+<div class="tags"><span class="tag">Life simulation</span><span class="tag">Android</span></div>
+<p>Live a whole life in the city: work your way up or run your own firm, raise a child, buy a house,
+drive, and travel.</p>
+<div class="card-links">
+<a href="citylife/index.html">About &amp; support</a>
+<a href="citylife/privacy.html">Privacy</a>
+<a href="citylife/terms.html">Terms</a>
+</div>
+</div>
+</article>
+
+<article class="game-card">
+<span class="badge">Coming soon</span>
+<img class="game-cover" src="afterdark/cover.webp" alt="After Dark: Street War: a red supercar racing through the city, police cars ahead" width="1610" height="895">
+<div class="game-body">
+<img class="game-icon" src="afterdark/icon.webp" alt="" width="512" height="512">
 <h3><a href="afterdark/index.html">After Dark: Street War</a></h3>
-<p>Arcade racing and vehicle combat. Race the rivals, fight the raiders, lose the police.
-Android &mdash; coming soon to Google Play.</p>
-<p><a href="afterdark/privacy.html">Privacy</a> &middot;
-<a href="afterdark/terms.html">Terms</a> &middot;
-<a href="afterdark/index.html">Support</a></p>
+<div class="tags"><span class="tag">Arcade racing</span><span class="tag">Vehicle combat</span><span class="tag">Android</span></div>
+<p>Race the rivals, fight the raiders, lose the police. An arcade racer with a fight in it.</p>
+<div class="card-links">
+<a href="afterdark/index.html">About &amp; support</a>
+<a href="afterdark/privacy.html">Privacy</a>
+<a href="afterdark/terms.html">Terms</a>
+</div>
+</div>
+</article>
+
 </div>
 
+<div class="grid-2">
+<section class="panel" id="support">
 <h2>Support</h2>
 <p>For any of our apps, write to
 <a href="mailto:support@vibkings.com">support@vibkings.com</a>. Say which app you are using
 and which phone you are on.</p>
+</section>
 
+<section class="panel" id="data">
 <h2>Deleting your data</h2>
 <p>Each app has its own privacy policy, linked above, with instructions for deleting your account and
-everything we hold about you. Or just email the address above from the account's email.</p>
-
-<footer>
-<p>&copy; 2026 Vibkings Global Limited &middot;
-<a href="https://vibkings.com">vibkings.com</a></p>
-</footer>
+everything we hold about you. Or just email the address above from the account&rsquo;s email.</p>
+</section>
+</div>
 
 </main>
+
+<footer class="site-footer">
+<p>&copy; 2026 Vibkings Global Limited</p>
+<p><a href="https://vibkings.com">vibkings.com</a> &middot; <a href="mailto:support@vibkings.com">support@vibkings.com</a></p>
+</footer>
+
 </body>
 </html>

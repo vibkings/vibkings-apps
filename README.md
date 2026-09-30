@@ -11,9 +11,14 @@ loads for anyone, and this is where it lives.
 /afterdark/                After Dark: Street War
 /afterdark/privacy.html    ← this URL goes in Play Console
 /afterdark/terms.html
+/citylife/                 City Life
+/citylife/privacy.html     ← this URL goes in Play Console
+/citylife/terms.html
+/<app>/cover.*, icon.*      the game card and page art (a wide cover, a square icon; jpg, png or webp)
 ```
 
-**One folder per app.** The next app gets `/thatapp/` with the same three pages. Folders rather than
+**One folder per app.** The next app gets `/thatapp/` with the same three pages, a cover and an
+icon image, and a card in the home page's grid. Folders rather than
 `afterdark-privacy.html` so nothing collides as the list grows, a new page can be added to one app
 without renaming anything, and every page shares one stylesheet.
 
@@ -40,6 +45,7 @@ Step 7 is the one that matters. A URL that only works for you is the same as no 
 ## Then in Play Console
 
 - **Policy ▸ App content ▸ Privacy policy** → `https://apps.vibkings.com/afterdark/privacy.html`
+  (City Life: `https://apps.vibkings.com/citylife/privacy.html`)
 - **Data deletion** → the same URL; section 7 of the policy carries the instructions.
 - **Store listing ▸ Website** → `https://apps.vibkings.com/afterdark/`
 - **Support email** → the address on the page.
