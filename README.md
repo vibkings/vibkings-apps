@@ -7,6 +7,7 @@ loads for anyone, and this is where it lives.
 ```
 /                          all apps
 /style.css                 one stylesheet for every page
+/favicon.svg, favicon.png, apple-touch-icon.png   the V mark in the browser tab and on home screens
 /CNAME                     apps.vibkings.com — what GitHub Pages serves it as
 /afterdark/                After Dark: Street War
 /afterdark/privacy.html    ← this URL goes in Play Console
