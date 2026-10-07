@@ -369,6 +369,9 @@ main.wide {
     background: var(--accent);
 }
 
+/* An app that is already running (the business apps), as opposed to a game still to launch */
+.badge-live { background: #3fbf7f; color: #06180f; }
+
 .card-links {
     position: relative;
     z-index: 1;             /* above the whole-card link */
@@ -376,7 +379,8 @@ main.wide {
     padding-top: 1rem;
     border-top: 1px solid var(--edge);
     display: flex;
-    gap: 1.1rem;
+    flex-wrap: wrap;        /* four links on a business-app card must wrap on a phone, not overflow */
+    gap: .4rem 1.1rem;
     font-size: .92rem;
 }
 
@@ -445,6 +449,7 @@ main.wide {
 }
 
 .store-button[aria-disabled] { opacity: .8; cursor: default; }
+.store-button:hover:not([aria-disabled]) { filter: brightness(1.08); }
 
 .site-footer {
     max-width: var(--page);

@@ -15,8 +15,17 @@ loads for anyone, and this is where it lives.
 /citylife/                 City Life
 /citylife/privacy.html     ← this URL goes in Play Console
 /citylife/terms.html
-/<app>/cover.*, icon.*      the game card and page art (a wide cover, a square icon; jpg, png or webp)
+/suite/                    Vibkings Suite (business app, live at vibkings.com)
+/hub/                      Vibkings Business Hub (live at hub.vibkings.com)
+/<app>/cover.*, icon.*      the card and page art (a wide cover, a square icon; jpg, png, webp or svg)
 ```
+
+**The business apps are different.** Vibkings Suite and the Business Hub are web apps that already
+run on their own domains, and one shared set of policies covers both, at
+`https://vibkings.com/privacy` and `https://vibkings.com/terms`. So `/suite/` and `/hub/` have only
+an `index.html` that links out to those, rather than their own copies: two copies of a privacy
+policy drift apart, and the one at vibkings.com is the one users accept in the app. Their cards on
+the home page carry a green **Live** badge (`.badge-live`) instead of "Coming soon".
 
 **One folder per app.** The next app gets `/thatapp/` with the same three pages, a cover and an
 icon image, and a card in the home page's grid. Folders rather than
