@@ -52,6 +52,19 @@ connection who cannot load your privacy policy treats it as missing.
 
 Step 7 is the one that matters. A URL that only works for you is the same as no URL.
 
+## Google Search
+
+- `robots.txt` lets every search engine in and points it at `sitemap.xml`.
+- `sitemap.xml` lists every page. **When an app gets a new folder, add its pages there**, and bump a
+  page's `<lastmod>` when its content changes.
+- Every page has a `<link rel="canonical">` with its one official URL, and the main pages have
+  Open Graph tags (the preview card when a link is shared on WhatsApp, X, Facebook…).
+- The home page and the Suite and Hub pages carry schema.org JSON-LD (Organization, WebApplication),
+  which is what Google reads to understand what each app is.
+
+The site is registered in **Google Search Console**; that is where to see whether pages are indexed
+and to resubmit the sitemap after a big change.
+
 ## Then in Play Console
 
 - **Policy ▸ App content ▸ Privacy policy** → `https://apps.vibkings.com/afterdark/privacy.html`
