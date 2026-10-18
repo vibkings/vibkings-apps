@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Family Shield icon: a shield holding a parent and a child. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f8f6b"/><stop offset="1" stop-color="#0d5c47"/>
+    </linearGradient>
+    <linearGradient id="sh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9f3ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M256 78 L398 128 V250 C398 344 336 410 256 438 C176 410 114 344 114 250 V128 Z" fill="url(#sh)"/>
+  <!-- parent -->
+  <circle cx="222" cy="214" r="34" fill="#0d5c47"/>
+  <path d="M164 336 C164 284 190 262 222 262 C254 262 280 284 280 336 Z" fill="#0d5c47"/>
+  <!-- child -->
+  <circle cx="306" cy="252" r="24" fill="#1f8f6b"/>
+  <path d="M266 340 C266 306 284 290 306 290 C328 290 346 306 346 340 Z" fill="#1f8f6b"/>
+</svg>

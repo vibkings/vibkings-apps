@@ -17,6 +17,9 @@ loads for anyone, and this is where it lives.
 /citylife/terms.html
 /suite/                    Vibkings Suite (business app, live at vibkings.com)
 /hub/                      Vibkings Business Hub (live at hub.vibkings.com)
+/familyshield/             Vibkings Family Shield (parental control; parent app + child app)
+/familyshield/privacy.html ← this URL goes in Play Console (both apps)
+/familyshield/terms.html
 /<app>/cover.*, icon.*      the card and page art (a wide cover, a square icon; jpg, png, webp or svg)
 ```
 
