@@ -504,3 +504,11 @@ main.wide {
     a { color: #000; }
     nav, footer, .topbar, .site-footer { display: none; }
 }
+
+/* A highlighted note inside a page, e.g. a temporary limitation. */
+.notice {
+    padding: 14px 16px;
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    background: var(--glass-strong);
+}
