@@ -17,6 +17,7 @@ loads for anyone, and this is where it lives.
 /citylife/terms.html
 /suite/                    Vibkings Suite (business app, live at vibkings.com)
 /hub/                      Vibkings Business Hub (live at hub.vibkings.com)
+/docs/                     Vibkings Docs (pay-per-document app; a BUILD, see below)
 /familyshield/             Vibkings Family Shield (parental control; parent app + child app)
 /familyshield/privacy.html ← this URL goes in Play Console (both apps)
 /familyshield/terms.html
@@ -29,6 +30,12 @@ run on their own domains, and one shared set of policies covers both, at
 an `index.html` that links out to those, rather than their own copies: two copies of a privacy
 policy drift apart, and the one at vibkings.com is the one users accept in the app. Their cards on
 the home page carry a green **Live** badge (`.badge-live`) instead of "Coming soon".
+
+**`/docs/` is different again.** It is the Vibkings Docs web app itself, built from the
+vibkings-suite repository (`npm run build:public-docs`, notes in that repo's
+`docs/vibkings-docs.md`). Don't edit files in it by hand: to update it, replace the whole folder's
+contents with the new `dist-public-docs` contents. Its `cover.svg` and `icon.svg` come with every
+build, so the home page card keeps its pictures. Policies are the shared ones at vibkings.com.
 
 **One folder per app.** The next app gets `/thatapp/` with the same three pages, a cover and an
 icon image, and a card in the home page's grid. Folders rather than

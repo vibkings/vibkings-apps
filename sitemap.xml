@@ -3,9 +3,10 @@
      Add the new pages here whenever an app gets its own folder, and bump <lastmod>
      on a page whenever its content changes. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://apps.vibkings.com/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://apps.vibkings.com/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://apps.vibkings.com/suite/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://apps.vibkings.com/hub/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://apps.vibkings.com/docs/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://apps.vibkings.com/familyshield/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://apps.vibkings.com/familyshield/guide.html</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://apps.vibkings.com/familyshield/privacy.html</loc><lastmod>2026-10-18</lastmod></url>
