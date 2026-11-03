@@ -477,6 +477,9 @@ main.wide {
     main { padding: 1.5rem 1.15rem 2rem; border-radius: 16px; margin-top: 1.25rem; width: calc(100% - 24px); }
     main.wide { padding: 0 12px; width: 100%; }
     .topbar-links { gap: .9rem; }
+    /* The 8:3 ratio plus the 16rem minimum height would make the banner 683px wide on a
+       phone (the page then scrolls sideways and long names are cut off); keep the height only. */
+    .game-hero { aspect-ratio: auto; }
     .game-hero-text { padding: 4rem 1.1rem 1.1rem; }
     .game-hero-text .game-icon { width: 4.2rem; height: 4.2rem; }
 }

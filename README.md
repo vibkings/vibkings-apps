@@ -18,6 +18,7 @@ loads for anyone, and this is where it lives.
 /suite/                    Vibkings Suite (business app, live at vibkings.com)
 /hub/                      Vibkings Business Hub (live at hub.vibkings.com)
 /docs/                     Vibkings Docs (pay-per-document app; a BUILD, see below)
+/social/                   Vibkings Social Manager (live at social.vibkings.com; own policies there)
 /familyshield/             Vibkings Family Shield (parental control; parent app + child app)
 /familyshield/privacy.html ← this URL goes in Play Console (both apps)
 /familyshield/terms.html
@@ -28,7 +29,10 @@ loads for anyone, and this is where it lives.
 run on their own domains, and one shared set of policies covers both, at
 `https://vibkings.com/privacy` and `https://vibkings.com/terms`. So `/suite/` and `/hub/` have only
 an `index.html` that links out to those, rather than their own copies: two copies of a privacy
-policy drift apart, and the one at vibkings.com is the one users accept in the app. Their cards on
+policy drift apart, and the one at vibkings.com is the one users accept in the app. **Vibkings Social Manager** (`/social/`) is the same kind of
+link-out page, but it has its **own** policies at `https://social.vibkings.com/privacy` and
+`https://social.vibkings.com/terms` (Meta, Google and TikTok review them there), so it links to
+those instead. Their cards on
 the home page carry a green **Live** badge (`.badge-live`) instead of "Coming soon".
 
 **`/docs/` is different again.** It is the Vibkings Docs web app itself, built from the

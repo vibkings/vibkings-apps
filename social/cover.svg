@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- Vibkings Social Manager cover: a week of scheduled posts beside an inbox reply, on the Vibkings blue.
+       Kept inside y 150–750 so the 8:3 page banner (which crops top and bottom) still shows it. -->
+  <defs>
+    <radialGradient id="g1" cx="80%" cy="15%" r="60%">
+      <stop offset="0" stop-color="#3B7BFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#3B7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="10%" cy="90%" r="55%">
+      <stop offset="0" stop-color="#ff4f7b" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#ff4f7b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B7BFF"/><stop offset="1" stop-color="#1f4fd1"/>
+    </linearGradient>
+    <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb347"/><stop offset=".5" stop-color="#ff4f7b"/><stop offset="1" stop-color="#9b4dff"/>
+    </linearGradient>
+    <linearGradient id="yt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5a4f"/><stop offset="1" stop-color="#d42a22"/>
+    </linearGradient>
+    <linearGradient id="tt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3fe0d0"/><stop offset="1" stop-color="#1fa59a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1330"/>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect width="1600" height="900" fill="url(#g2)"/>
+
+  <!-- content calendar: a week, posts as coloured tiles -->
+  <g transform="translate(150 160)">
+    <rect width="860" height="580" rx="28" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+    <rect x="32" y="30" width="220" height="20" rx="10" fill="#ffffff" fill-opacity=".55"/>
+    <rect x="700" y="22" width="128" height="40" rx="20" fill="#3B7BFF"/>
+    <!-- day headings -->
+    <g fill="#ffffff" fill-opacity=".25">
+      <rect x="32" y="92" width="80" height="12" rx="6"/><rect x="146" y="92" width="80" height="12" rx="6"/>
+      <rect x="260" y="92" width="80" height="12" rx="6"/><rect x="374" y="92" width="80" height="12" rx="6"/>
+      <rect x="488" y="92" width="80" height="12" rx="6"/><rect x="602" y="92" width="80" height="12" rx="6"/>
+      <rect x="716" y="92" width="80" height="12" rx="6"/>
+    </g>
+    <!-- day columns -->
+    <g fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".08" stroke-width="2">
+      <rect x="32" y="122" width="104" height="424" rx="14"/><rect x="146" y="122" width="104" height="424" rx="14"/>
+      <rect x="260" y="122" width="104" height="424" rx="14"/><rect x="374" y="122" width="104" height="424" rx="14"/>
+      <rect x="488" y="122" width="104" height="424" rx="14"/><rect x="602" y="122" width="104" height="424" rx="14"/>
+      <rect x="716" y="122" width="104" height="424" rx="14"/>
+    </g>
+    <!-- scheduled posts -->
+    <rect x="42" y="140" width="84" height="96" rx="12" fill="url(#fb)"/>
+    <rect x="42" y="250" width="84" height="70" rx="12" fill="url(#tt)"/>
+    <rect x="156" y="200" width="84" height="120" rx="12" fill="url(#ig)"/>
+    <rect x="270" y="150" width="84" height="84" rx="12" fill="url(#yt)"/>
+    <path d="M300 178 v28 l24 -14 z" fill="#ffffff" fill-opacity=".9"/>
+    <rect x="270" y="360" width="84" height="96" rx="12" fill="url(#fb)"/>
+    <rect x="384" y="140" width="84" height="120" rx="12" fill="url(#ig)"/>
+    <rect x="384" y="300" width="84" height="70" rx="12" fill="url(#tt)"/>
+    <rect x="498" y="230" width="84" height="96" rx="12" fill="url(#fb)"/>
+    <rect x="612" y="160" width="84" height="84" rx="12" fill="url(#yt)"/>
+    <path d="M642 188 v28 l24 -14 z" fill="#ffffff" fill-opacity=".9"/>
+    <rect x="612" y="390" width="84" height="120" rx="12" fill="url(#ig)"/>
+    <rect x="726" y="280" width="84" height="70" rx="12" fill="url(#tt)"/>
+  </g>
+
+  <!-- inbox: a customer question and the approved reply -->
+  <g transform="translate(1060 220)">
+    <rect width="390" height="460" rx="28" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+    <rect x="30" y="30" width="150" height="18" rx="9" fill="#ffffff" fill-opacity=".55"/>
+    <!-- customer bubble -->
+    <circle cx="56" cy="114" r="24" fill="url(#ig)"/>
+    <rect x="94" y="88" width="264" height="74" rx="18" fill="#ffffff" fill-opacity=".14"/>
+    <rect x="114" y="108" width="200" height="12" rx="6" fill="#ffffff" fill-opacity=".55"/>
+    <rect x="114" y="132" width="140" height="12" rx="6" fill="#ffffff" fill-opacity=".3"/>
+    <!-- reply bubble -->
+    <rect x="62" y="194" width="296" height="104" rx="18" fill="#3B7BFF"/>
+    <rect x="84" y="216" width="230" height="12" rx="6" fill="#ffffff" fill-opacity=".85"/>
+    <rect x="84" y="240" width="190" height="12" rx="6" fill="#ffffff" fill-opacity=".6"/>
+    <rect x="84" y="264" width="120" height="12" rx="6" fill="#ffffff" fill-opacity=".6"/>
+    <!-- approved tick -->
+    <circle cx="334" cy="318" r="22" fill="#3fbf7f"/>
+    <path d="M323 318 l8 8 l14 -16" fill="none" stroke="#06180f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- lead chip -->
+    <rect x="30" y="374" width="170" height="50" rx="25" fill="#ffc94a"/>
+    <rect x="56" y="393" width="118" height="12" rx="6" fill="#3a2a00" fill-opacity=".7"/>
+  </g>
+</svg>
